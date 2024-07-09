@@ -19,7 +19,7 @@ const PostsPage = async() => {
                       <p>{post.description}</p>
                       <p>{post.likes}</p>
                       <div className="card-actions justify-end">
-                        <button className="btn">See More</button>
+                        <button className="btn">See_More</button>
                       </div>
                     </div>
                   </div>)

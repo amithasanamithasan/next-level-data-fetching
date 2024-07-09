@@ -2,16 +2,18 @@
 
 const PostsPage = async() => {
     const res=await fetch("http://localhost:5000/posts",{
-        cache:'force-cache',
-    })
+        // cache:'force-cache',
+        next:{
+            revalidate:5,
+        },
+    });
    const posts= await res.json();
-   console.log(posts);
+//    console.log(posts);
     return (
         <div className="w-full   ">
-            <h1 className="text-xl">Total posts:{posts.length}</h1>
+            <h1 className="text-xl">Total data posts:{posts.length}</h1>
 
-            {
-                posts.map(post=> <div key={post.id} className="card bg-primary text-primary-content w-[70%] my-4 mx-auto">
+            { posts.map(post=> <div key={post.id} className="card bg-primary text-primary-content w-[70%] my-4 mx-auto">
                     <div className="card-body text-center">
                       <h2 className="card-title">{post.title}</h2>
                       <p>{post.description}</p>

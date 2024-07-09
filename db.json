@@ -1,0 +1,42 @@
+{
+    "posts":[
+        {
+          "id": 1,
+          "title": "Exploring the Mountains",
+          "description": "Discover the beauty of the mountains as we hike through scenic trails and breathtaking landscapes. A must-read for nature enthusiasts!",
+          "likes": 152
+        },
+        {
+          "id": 2,
+          "title": "Gourmet Cooking Tips",
+          "description": "Elevate your culinary skills with these gourmet cooking tips. From perfecting sauces to plating like a pro, this guide has it all.",
+          "likes": 89
+        },
+        {
+          "id": 3,
+          "title": "Tech Innovations of 2024",
+          "description": "Stay ahead of the curve with the latest tech innovations of 2024. This post covers groundbreaking gadgets and software advancements.",
+          "likes": 207
+        },
+        {
+          "id": 4,
+          "title": "Mastering Yoga",
+          "description": "Embrace the art of yoga with our comprehensive guide. Learn poses, breathing techniques, and the mental benefits of a consistent practice.",
+          "likes": 134
+        },
+        {
+          "id": 5,
+          "title": "Travel on a Budget",
+          "description": "Travel the world without breaking the bank. This post offers practical tips and tricks for budget-friendly adventures and experiences.",
+          "likes": 176
+        },
+        {
+          "id": 6,
+          "title": "Home Gardening Essentials",
+          "description": "Transform your backyard into a lush garden with our home gardening essentials. From soil tips to plant care, we cover it all.",
+          "likes": 98
+        }
+      ]
+      
+}
+  

@@ -3,9 +3,10 @@
 const PostsPage = async() => {
     const res=await fetch("http://localhost:5000/posts",{
         // cache:'force-cache',
-        next:{
-            revalidate:5,
-        },
+        // next:{
+        //     revalidate:5,
+        // },
+        cache:"no-store",
     });
    const posts= await res.json();
 //    console.log(posts);
@@ -15,9 +16,9 @@ const PostsPage = async() => {
 
             { posts.map(post=> <div key={post.id} className="card bg-primary text-primary-content w-[70%] my-4 mx-auto">
                     <div className="card-body text-center">
-                      <h2 className="card-title">{post.title}</h2>
-                      <p>{post.description}</p>
-                      <p>{post.likes}</p>
+                      <h2 className="card-title">TITLE{post.title}</h2>
+                      <p>DESCRIPTION:{post.description}</p>
+                      <p>LIKES:{post.likes}</p>
                       <div className="card-actions justify-end">
                         <button className="btn">See_More</button>
                       </div>
